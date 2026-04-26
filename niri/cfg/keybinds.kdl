@@ -115,9 +115,9 @@ binds {
 
 
     // ─── Screenshots ───
-    Print                               { screenshot; }
-    CTRL+Print                          { screenshot-screen; }
-    Shift+Print                         { screenshot-window; }
+    Print                               { screenshot-screen; }
+    Shift+Print                         { screenshot; }
+    Alt+Print                           { screenshot-window; }
 
     // ─── GPU Screen Recorder ───
     Alt+F12                             hotkey-overlay-title="Record replay buffer"{ spawn-sh "qs -c noctalia-shell ipc call plugin:screen-recorder saveReplay"; }
