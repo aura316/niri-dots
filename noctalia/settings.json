@@ -9,22 +9,22 @@
         "density": "default",
         "enableClipPreview": true,
         "enableClipboardChips": true,
-        "enableClipboardHistory": true,
+        "enableClipboardHistory": false,
         "enableClipboardSmartIcons": true,
-        "enableSessionSearch": true,
+        "enableSessionSearch": false,
         "enableSettingsSearch": true,
-        "enableWindowsSearch": true,
+        "enableWindowsSearch": false,
         "iconMode": "native",
         "ignoreMouseInput": false,
         "overviewLayer": false,
         "pinnedApps": [
         ],
-        "position": "top_center",
+        "position": "follow_bar",
         "screenshotAnnotationTool": "",
-        "showCategories": true,
+        "showCategories": false,
         "showIconBackground": true,
         "sortByMostUsed": true,
-        "terminalCommand": "alacritty -e",
+        "terminalCommand": "ptixys --",
         "viewMode": "list"
     },
     "audio": {
@@ -158,7 +158,32 @@
                     "hidePassive": false,
                     "id": "Tray",
                     "pinned": [
+                        "steam"
                     ]
+                },
+                {
+                    "defaultSettings": {
+                        "audioCodec": "opus",
+                        "audioSource": "default_output",
+                        "colorRange": "limited",
+                        "copyToClipboard": false,
+                        "customReplayDuration": "30",
+                        "directory": "",
+                        "filenamePattern": "recording_yyyyMMdd_HHmmss",
+                        "frameRate": "60",
+                        "hideInactive": false,
+                        "iconColor": "none",
+                        "quality": "very_high",
+                        "replayDuration": "30",
+                        "replayEnabled": false,
+                        "replayStorage": "ram",
+                        "resolution": "original",
+                        "restorePortalSession": false,
+                        "showCursor": true,
+                        "videoCodec": "h264",
+                        "videoSource": "portal"
+                    },
+                    "id": "plugin:screen-recorder"
                 },
                 {
                     "hideWhenZero": false,
@@ -233,7 +258,7 @@
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Rose Pine",
+        "predefinedScheme": "Tokyo-Night",
         "schedulingMode": "off",
         "syncGsettings": true,
         "useWallpaperColors": false
@@ -265,7 +290,7 @@
                 "id": "media-sysmon-card"
             }
         ],
-        "diskPath": "/",
+        "diskPath": "/var",
         "position": "close_to_bar_button",
         "shortcuts": {
             "left": [
@@ -303,6 +328,11 @@
         "gridSnap": false,
         "gridSnapScale": false,
         "monitorWidgets": [
+            {
+                "name": "HDMI-A-1",
+                "widgets": [
+                ]
+            }
         ],
         "overviewEnabled": true
     },
@@ -312,7 +342,7 @@
         "colorizeIcons": false,
         "deadOpacity": 0.6,
         "displayMode": "auto_hide",
-        "dockType": "floating",
+        "dockType": "attached",
         "enabled": false,
         "floatingRatio": 1,
         "groupApps": false,
@@ -343,7 +373,7 @@
         "allowPanelsOnScreenWithoutBar": true,
         "allowPasswordWithFprintd": false,
         "animationDisabled": false,
-        "animationSpeed": 1,
+        "animationSpeed": 1.5,
         "autoStartAuth": false,
         "avatarImage": "/home/aura/.face",
         "boxRadiusRatio": 1,
@@ -431,7 +461,7 @@
         "suspendTimeout": 1800
     },
     "location": {
-        "analogClockInCalendar": false,
+        "analogClockInCalendar": true,
         "autoLocate": false,
         "firstDayOfWeek": -1,
         "hideWeatherCityName": false,
@@ -472,7 +502,7 @@
     "notifications": {
         "backgroundOpacity": 1,
         "clearDismissed": true,
-        "criticalUrgencyDuration": 10,
+        "criticalUrgencyDuration": 5,
         "density": "default",
         "enableBatteryToast": true,
         "enableKeyboardLayoutToast": true,
@@ -483,13 +513,13 @@
         "lowUrgencyDuration": 1,
         "monitors": [
         ],
-        "normalUrgencyDuration": 3,
+        "normalUrgencyDuration": 2,
         "overlayLayer": true,
         "respectExpireTimeout": false,
         "saveToHistory": {
             "critical": true,
-            "low": true,
-            "normal": true
+            "low": false,
+            "normal": false
         },
         "sounds": {
             "criticalSoundFile": "",
@@ -523,7 +553,7 @@
     "sessionMenu": {
         "countdownDuration": 3000,
         "enableCountdown": true,
-        "largeButtonsLayout": "single-row",
+        "largeButtonsLayout": "grid",
         "largeButtonsStyle": true,
         "position": "center",
         "powerOptions": [
@@ -599,7 +629,7 @@
         "diskCriticalThreshold": 90,
         "diskWarningThreshold": 80,
         "enableDgpuMonitoring": false,
-        "externalMonitor": "resources || missioncenter || jdsystemmonitor || corestats || system-monitoring-center || gnome-system-monitor || plasma-systemmonitor || mate-system-monitor || ukui-system-monitor || deepin-system-monitor || pantheon-system-monitor",
+        "externalMonitor": "missioncenter-helper",
         "gpuCriticalThreshold": 90,
         "gpuWarningThreshold": 80,
         "memCriticalThreshold": 90,
@@ -620,7 +650,7 @@
         "boxBorderEnabled": false,
         "fontDefault": "Adwaita Sans",
         "fontDefaultScale": 1,
-        "fontFixed": "monospace",
+        "fontFixed": "Adwaita Mono",
         "fontFixedScale": 1,
         "panelBackgroundOpacity": 0.93,
         "panelsAttachedToBar": true,

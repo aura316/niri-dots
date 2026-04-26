@@ -8,7 +8,7 @@ input {
             // uncomment the line below and change the layout accordingly.
             //layout "us" // Use the American keyboard layout
         }
-        numlock // Enable numlock on startup
+        // numlock // Enable numlock on startup
     }
 
     touchpad {
@@ -19,10 +19,10 @@ input {
     mouse {
         // If you want to disable Mouse Acceleration,
         // uncomment the lines below.
-        //accel-profile "flat"
+        accel-profile "flat"
         //accel-speed 0.0
     }
 
     focus-follows-mouse // Automatically focus windows under the mouse pointer
-    workspace-auto-back-and-forth false // Enable workspace back & forth switching
+    workspace-auto-back-and-forth false // Disable workspace back & forth switching
 }

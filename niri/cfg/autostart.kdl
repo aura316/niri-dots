@@ -1,4 +1,7 @@
 // ────────────── Startup Applications ──────────────
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Miscellaneous#spawn-sh-at-startup
 
-    spawn-sh-at-startup "qs -c noctalia-shell"
+// Start noctalia
+spawn-sh-at-startup "qs -c noctalia-shell"
+// Dirty hack to avoid doing the ipc call before the shell is online
+spawn-sh-at-startup "sleep 5 && qs -c noctalia-shell ipc call plugin:screen-recorder startReplay" 

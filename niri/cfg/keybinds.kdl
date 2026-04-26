@@ -9,7 +9,7 @@ binds {
     Mod+Shift+ESCAPE                    { show-hotkey-overlay; }
 
     // ─── Applications ───
-    Mod+Return                          hotkey-overlay-title="Open Terminal" { spawn "ptyxis --new-window"; }
+    Mod+Return                          hotkey-overlay-title="Open Terminal" { spawn "ptyxis" "--new-window"; }
     Mod+R                               hotkey-overlay-title="Open App Launcher" { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
     Mod+B                               hotkey-overlay-title="Open Browser" { spawn-sh "flatpak run net.waterfox.waterfox"; }
     Mod+E                               hotkey-overlay-title="File Manager" { spawn "nautilus"; }
@@ -89,7 +89,7 @@ binds {
     Mod+Shift+8                         { move-column-to-workspace 8; }
     Mod+Shift+9                         { move-column-to-workspace 9; }
 
-    Mod+TAB                             { focus-workspace-previous; }
+    Mod+P                             { focus-workspace-previous; }
 
     // ─── Layout Controls ───
     Mod+F                               { maximize-column; }
@@ -119,6 +119,10 @@ binds {
     CTRL+Print                          { screenshot-screen; }
     Shift+Print                         { screenshot-window; }
 
+    // ─── GPU Screen Recorder ───
+    Alt+F12                             hotkey-overlay-title="Record replay buffer"{ spawn-sh "qs -c noctalia-shell ipc call plugin:screen-recorder saveReplay"; }
+
+
     // ─── Emergency Escape Key ───
     // Use this when a fullscreen app blocks your keybinds.
     // It disables any active keyboard shortcut inhibitor, restoring control.
@@ -127,5 +131,5 @@ binds {
     // ─── Exit / Power ───
     CTRL+ALT+Delete                     { quit; } // Also quits Niri
     Mod+Shift+P                         { power-off-monitors; } // Turn off screens (useful for OLED or privacy)
-    Mod+O                               repeat=false { toggle-overview; }
+    Mod+Tab                             repeat=false { toggle-overview; }
 }
