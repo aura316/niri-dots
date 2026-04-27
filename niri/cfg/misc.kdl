@@ -9,9 +9,9 @@ environment {
     XDG_CURRENT_DESKTOP "niri"
 }
 
-/- cursor {
-    xcursor-theme "capitaine-cursors"
-    xcursor-size 12
+ cursor {
+    xcursor-theme "Adwaita"
+    xcursor-size 24
 }
 
 debug {
