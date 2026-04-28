@@ -6,6 +6,7 @@ input {
         xkb {
             //If you want to overwrite your keyboard layout,
             // uncomment the line below and change the layout accordingly.
+            // Can be set with localectl
             //layout "us" // Use the American keyboard layout
         }
         // numlock // Enable numlock on startup
@@ -23,6 +24,8 @@ input {
         //accel-speed 0.0
     }
 
-    focus-follows-mouse // Automatically focus windows under the mouse pointer
+    // Automatically focus windows under the mouse pointer
+    // max-scroll to avoid issues with 0.5 proportion leaving 1 pixel on the side, which makes it scroll to the window when im just trying to mouse over the other monitor
+    focus-follows-mouse max-scroll-amount="40%" 
     workspace-auto-back-and-forth 
 }

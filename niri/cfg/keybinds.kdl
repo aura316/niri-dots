@@ -4,7 +4,7 @@
 
 binds {
     // ─── Applications ───
-    Mod+Return                          hotkey-overlay-title="Open Terminal" { spawn "ptyxis" "--new-window"; }
+    Mod+Return                          hotkey-overlay-title="Open Terminal" { spawn "xdg-terminal-exec"; }
     Mod+R                               hotkey-overlay-title="Open App Launcher" { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
     Mod+B                               hotkey-overlay-title="Open Browser" { spawn-sh "flatpak run net.waterfox.waterfox"; }
     Mod+E                               hotkey-overlay-title="File Manager" { spawn "nautilus"; }

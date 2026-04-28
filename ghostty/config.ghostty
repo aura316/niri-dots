@@ -1,0 +1,10 @@
+theme = TokyoNight
+background-opacity = 0.85
+background-blur = true
+font-family = Cascadia Code
+
+# Define the used shell. Avoid using chsh.
+command = zsh
+
+# Disable ligatures
+#font-feature = -calt

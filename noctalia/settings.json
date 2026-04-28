@@ -24,7 +24,7 @@
         "showCategories": false,
         "showIconBackground": true,
         "sortByMostUsed": true,
-        "terminalCommand": "ptyxis --new-window --",
+        "terminalCommand": "xdg-terminal-exec --",
         "viewMode": "list"
     },
     "audio": {
@@ -70,6 +70,10 @@
         "rightClickCommand": "",
         "rightClickFollowMouse": true,
         "screenOverrides": [
+            {
+                "enabled": false,
+                "name": "DP-1"
+            }
         ],
         "showCapsule": true,
         "showOnWorkspaceSwitch": true,
@@ -139,13 +143,15 @@
                 {
                     "colorizeIcons": false,
                     "hideMode": "hidden",
-                    "id": "ActiveWindow",
-                    "maxWidth": 145,
-                    "scrollingMode": "hover",
-                    "showIcon": true,
-                    "showText": true,
-                    "textColor": "none",
-                    "useFixedWidth": false
+                    "iconScale": 0.8,
+                    "id": "Taskbar",
+                    "maxTaskbarWidth": 40,
+                    "onlyActiveWorkspaces": true,
+                    "onlySameOutput": true,
+                    "showPinnedApps": false,
+                    "showTitle": true,
+                    "smartWidth": true,
+                    "titleWidth": 80
                 }
             ],
             "right": [
@@ -258,7 +264,7 @@
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Tokyo-Night",
+        "predefinedScheme": "Tokyo Night",
         "schedulingMode": "off",
         "syncGsettings": true,
         "useWallpaperColors": false
@@ -361,6 +367,7 @@
         ],
         "onlySameOutput": true,
         "pinnedApps": [
+            "waterfox"
         ],
         "pinnedStatic": false,
         "position": "bottom",
@@ -518,8 +525,8 @@
         "respectExpireTimeout": false,
         "saveToHistory": {
             "critical": true,
-            "low": false,
-            "normal": false
+            "low": true,
+            "normal": true
         },
         "sounds": {
             "criticalSoundFile": "",
@@ -666,6 +673,20 @@
         "enableMultiMonitorDirectories": false,
         "enabled": true,
         "favorites": [
+            {
+                "appearance": "dark",
+                "colorScheme": "Tokyo Night",
+                "darkMode": true,
+                "generationMethod": "tonal-spot",
+                "paletteColors": [
+                    "#7aa2f7",
+                    "#bb9af7",
+                    "#9ece6a",
+                    "#f7768e"
+                ],
+                "path": "/home/aura/Pictures/Wallpapers/wallhaven-1qkgww.jpg",
+                "useWallpaperColors": false
+            }
         ],
         "fillColor": "#000000",
         "fillMode": "crop",
@@ -679,7 +700,7 @@
         "panelPosition": "follow_bar",
         "randomIntervalSec": 300,
         "setWallpaperOnAllMonitors": true,
-        "showHiddenFiles": false,
+        "showHiddenFiles": true,
         "skipStartupTransition": false,
         "solidColor": "#1a1a2e",
         "sortOrder": "name",
