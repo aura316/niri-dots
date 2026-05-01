@@ -1,4 +1,4 @@
--- vim.opt.guicursor = ""
+vim.opt.guicursor = "a:block,i-ci-ve:block-blinkwait700-blinkon400-blinkoff400"
 
 vim.opt.number = true
 vim.opt.relativenumber = true
@@ -10,7 +10,6 @@ vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
-vim.opt.iskeyword:append("-")
 
 vim.opt.wrap = false
 
@@ -22,11 +21,14 @@ vim.opt.undofile = true
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
+vim.opt.ignorecase = true
+vim.opt.smartcase = true -- dont ignore case if there's an upper character
+
 vim.opt.termguicolors = true
 
 vim.opt.scrolloff = 6
 vim.opt.signcolumn = "yes"
-vim.opt.isfname:append("@-@")
+vim.opt.isfname:append("@-@") -- hyphen should be a part of a word
 vim.opt.clipboard:append("unnamedplus")
 
 vim.opt.updatetime = 50

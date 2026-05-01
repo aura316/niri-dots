@@ -19,7 +19,7 @@
         "overviewLayer": false,
         "pinnedApps": [
         ],
-        "position": "follow_bar",
+        "position": "center",
         "screenshotAnnotationTool": "",
         "showCategories": false,
         "showIconBackground": true,
@@ -264,7 +264,7 @@
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Tokyo Night",
+        "predefinedScheme": "Kanagawa",
         "schedulingMode": "off",
         "syncGsettings": true,
         "useWallpaperColors": false
@@ -519,6 +519,7 @@
         "location": "top_right",
         "lowUrgencyDuration": 1,
         "monitors": [
+            "DP-1"
         ],
         "normalUrgencyDuration": 2,
         "overlayLayer": true,

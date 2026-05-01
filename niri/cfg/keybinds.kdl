@@ -36,15 +36,15 @@ binds {
     Mod+Shift+End                       { move-column-to-last; }
 
     // ─── Monitor movement ───
-    Mod+Alt+Left                        { focus-monitor-left; }
-    Mod+Alt+Right                       { focus-monitor-right; }
-    Mod+Alt+Up                          { focus-monitor-up; }
-    Mod+Alt+Down                        { focus-monitor-down; }
+    Mod+Ctrl+Left                        { focus-monitor-left; }
+    Mod+Ctrl+Right                       { focus-monitor-right; }
+    Mod+Ctrl+Up                          { focus-monitor-up; }
+    Mod+Ctrl+Down                        { focus-monitor-down; }
 
-    Mod+Alt+Shift+Left                  { move-column-to-monitor-left; }
-    Mod+Alt+Shift+Right                 { move-column-to-monitor-right; }
-    Mod+Alt+Shift+Up                    { move-column-to-monitor-up; }
-    Mod+Alt+Shift+Down                  { move-column-to-monitor-down; }
+    Mod+Ctrl+Shift+Left                  { move-column-to-monitor-left; }
+    Mod+Ctrl+Shift+Right                 { move-column-to-monitor-right; }
+    Mod+Ctrl+Shift+Up                    { move-column-to-monitor-up; }
+    Mod+Ctrl+Shift+Down                  { move-column-to-monitor-down; }
 
 
     // ─── Mouse wheel binds ───
