@@ -1,6 +1,6 @@
 {
     "appLauncher": {
-        "autoPasteClipboard": false,
+        "autoPasteClipboard": true,
         "clipboardWatchImageCommand": "wl-paste --type image --watch cliphist store",
         "clipboardWatchTextCommand": "wl-paste --type text --watch cliphist store",
         "clipboardWrapText": true,
@@ -264,7 +264,7 @@
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Kanagawa",
+        "predefinedScheme": "Tokyo Night",
         "schedulingMode": "off",
         "syncGsettings": true,
         "useWallpaperColors": false
@@ -686,6 +686,34 @@
                     "#f7768e"
                 ],
                 "path": "/home/aura/Pictures/Wallpapers/wallhaven-1qkgww.jpg",
+                "useWallpaperColors": false
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Tokyo Night",
+                "darkMode": true,
+                "generationMethod": "tonal-spot",
+                "paletteColors": [
+                    "#7aa2f7",
+                    "#bb9af7",
+                    "#9ece6a",
+                    "#f7768e"
+                ],
+                "path": "/home/aura/Pictures/Wallpapers/wallhaven-2yodx9.png",
+                "useWallpaperColors": false
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Tokyo Night",
+                "darkMode": true,
+                "generationMethod": "tonal-spot",
+                "paletteColors": [
+                    "#7aa2f7",
+                    "#bb9af7",
+                    "#9ece6a",
+                    "#f7768e"
+                ],
+                "path": "/home/aura/Pictures/Wallpapers/photomode_06042026_235404.png",
                 "useWallpaperColors": false
             }
         ],
