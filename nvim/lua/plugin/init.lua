@@ -1,4 +1,4 @@
---require("alpha.lua")
+require("plugin.oil")
 require("plugin.colorscheme")
 require("plugin.telescope")
 require("plugin.treesitter")
