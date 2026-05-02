@@ -90,22 +90,6 @@
                     "id": "Clock",
                     "tooltipFormat": "HH:mm ddd, MMM dd",
                     "useCustomFont": false
-                },
-                {
-                    "compactMode": true,
-                    "hideMode": "hidden",
-                    "hideWhenIdle": false,
-                    "id": "MediaMini",
-                    "maxWidth": 145,
-                    "panelShowAlbumArt": true,
-                    "scrollingMode": "hover",
-                    "showAlbumArt": true,
-                    "showArtistFirst": true,
-                    "showProgressRing": true,
-                    "showVisualizer": true,
-                    "textColor": "none",
-                    "useFixedWidth": false,
-                    "visualizerType": "linear"
                 }
             ],
             "left": [
@@ -141,6 +125,10 @@
                     "unfocusedIconsOpacity": 1
                 },
                 {
+                    "id": "Spacer",
+                    "width": 20
+                },
+                {
                     "colorizeIcons": false,
                     "hideMode": "hidden",
                     "iconScale": 0.8,
@@ -149,7 +137,7 @@
                     "onlyActiveWorkspaces": true,
                     "onlySameOutput": true,
                     "showPinnedApps": false,
-                    "showTitle": true,
+                    "showTitle": false,
                     "smartWidth": true,
                     "titleWidth": 80
                 }
