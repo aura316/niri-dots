@@ -35,8 +35,8 @@ vim.opt.updatetime = 50
 -- vim.opt.colorcolumn = "80"
 
 -- Native autocompletion
-vim.o.complete = ".,o" -- use buffer and omnifunc
-vim.o.completeopt = "fuzzy,menuone,noselect,popup" -- add 'popup' for docs (sometimes)
-vim.o.autocomplete = true
+vim.opt.complete = ".,o" -- use buffer and omnifunc
+vim.opt.completeopt = "fuzzy,menuone,noselect,popup" -- add 'popup' for docs (sometimes)
+vim.opt.autocomplete = true
 vim.opt.shortmess:prepend("c") -- avoid having to press enter on snippet completion
-vim.o.pumheight = 7
+vim.opt.pumheight = 7

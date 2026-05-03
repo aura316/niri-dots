@@ -3,6 +3,12 @@ vim.g.maplocalleader = " "
 
 vim.keymap.set("n", "<leader>e", vim.cmd.Oil, { desc = "Open parent directory" })
 
+-- Navigating splits
+vim.keymap.set("n", "<c-j>", "<c-w><c-j>")
+vim.keymap.set("n", "<c-k>", "<c-w><c-k>")
+vim.keymap.set("n", "<c-l>", "<c-w><c-l>")
+vim.keymap.set("n", "<c-h>", "<c-w><c-h>")
+
 -- Keeping the cursor centered.
 vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Scroll downwards" })
 vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Scroll upwards" })

@@ -4,9 +4,9 @@
 
 // Start noctalia
 spawn-sh-at-startup "qs -c noctalia-shell"
-// Dirty hack to avoid doing the ipc call before the shell is online
 
 // ibus
 // spawn-sh-at-startup "ibus-daemon -dr --emoji-extension=disable --panel=disable"
 
-spawn-sh-at-startup "sleep 5 && qs -c noctalia-shell ipc call plugin:screen-recorder startReplay"
+// Dirty hack to avoid doing the ipc call before the shell is online
+spawn-sh-at-startup "sleep 9 && qs -c noctalia-shell ipc call plugin:screen-recorder startReplay"
