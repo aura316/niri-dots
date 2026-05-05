@@ -160,3 +160,11 @@ please() { sudo "$(fc -ln -1)" }
 if [ -f "$Z_SYNTAX_PATH" ]; then
     source "$Z_SYNTAX_PATH"
 fi
+
+# ------------------------------------------------------------------------------
+# BREW: Ensure brew is properly initialized
+# ------------------------------------------------------------------------------
+BREW_PATH="/home/linuxbrew/.linuxbrew/bin/brew"
+if [ -f "$BREW_PATH" ]; then
+    eval "$($BREW_PATH shellenv zsh)"
+fi
