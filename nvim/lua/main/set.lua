@@ -29,7 +29,6 @@ vim.opt.termguicolors = true
 vim.opt.scrolloff = 6
 vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@") -- hyphen should be a part of a word
-vim.opt.clipboard:append("unnamedplus")
 
 vim.opt.updatetime = 50
 -- vim.opt.colorcolumn = "80"

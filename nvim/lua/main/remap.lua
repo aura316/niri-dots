@@ -3,6 +3,12 @@ vim.g.maplocalleader = " "
 
 vim.keymap.set("n", "<leader>e", vim.cmd.Oil, { desc = "Open parent directory" })
 
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
+vim.keymap.set("v", "<C-S-c>", "+y")
+vim.keymap.set("n", "Y", "yg$")
+
 -- Navigating splits
 vim.keymap.set("n", "<c-j>", "<c-w><c-j>")
 vim.keymap.set("n", "<c-k>", "<c-w><c-k>")
