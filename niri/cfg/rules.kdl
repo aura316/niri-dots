@@ -16,16 +16,6 @@ window-rule {
     open-focused false
 }
 
-// Enable blur behind the terminal.
-window-rule {
-    match app-id="^com.mitchellh.ghostty$"
-    match app-id="^foot$"
-
-    background-effect {
-        blur true
-    }
-}
-
 layer-rule {
     match namespace="^noctalia-wallpaper*"
     place-within-backdrop true

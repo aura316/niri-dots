@@ -5,8 +5,8 @@
 binds {
     // ─── Applications ───
     Mod+Return                          hotkey-overlay-title="Open Terminal" { spawn "xdg-terminal-exec"; }
-    Mod+R                               hotkey-overlay-title="Open App Launcher" { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
-    Mod+B                               hotkey-overlay-title="Open Browser" { spawn-sh "flatpak run net.waterfox.waterfox"; }
+    Mod+R                               hotkey-overlay-title="Open App Launcher" { spawn-sh "noctalia msg panel-toggle launcher"; }
+    Mod+B                               hotkey-overlay-title="Open Browser" { spawn-sh "flatpak run org.mozilla.firefox"; }
     Mod+E                               hotkey-overlay-title="File Manager" { spawn "nautilus"; }
     Mod+Q                               { close-window; }
     Mod+V                               hotkey-overlay-title="Open clipboard" {spawn-sh "qs -c noctalia-shell ipc call launcher clipboard"; }

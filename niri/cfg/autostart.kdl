@@ -1,12 +1,5 @@
 // ────────────── Startup Applications ──────────────
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Miscellaneous#spawn-sh-at-startup
 
-
-// Start noctalia
-spawn-sh-at-startup "qs -c noctalia-shell"
-
-// ibus
-// spawn-sh-at-startup "ibus-daemon -dr --emoji-extension=disable --panel=disable"
-
-// Dirty hack to avoid doing the ipc call before the shell is online
-spawn-sh-at-startup "sleep 9 && qs -c noctalia-shell ipc call plugin:screen-recorder startReplay"
+spawn-at-startup "noctalia"
+spawn-sh-at-startup "nautilus --gapplication-service"
