@@ -9,11 +9,11 @@ binds {
     Mod+B                               hotkey-overlay-title="Open Browser" { spawn-sh "flatpak run org.mozilla.firefox"; }
     Mod+E                               hotkey-overlay-title="File Manager" { spawn "nautilus"; }
     Mod+Q                               { close-window; }
-    Mod+V                               hotkey-overlay-title="Open clipboard" {spawn-sh "qs -c noctalia-shell ipc call launcher clipboard"; }
+    Mod+V                               hotkey-overlay-title="Open clipboard" {spawn-sh "noctalia msg panel-toggle clipboard"; }
 
     // ─── Session control ───
-    Mod+L                               hotkey-overlay-title="Lock Screen" { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; }
-    Mod+Shift+Q                         hotkey-overlay-title="Session Menu" { spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle"; }
+    Mod+L                               hotkey-overlay-title="Lock Screen" { spawn-sh "noctalia msg session lock"; }
+    Mod+Shift+Q                         hotkey-overlay-title="Session Menu" { spawn-sh "noctalia msg panel-toggle session"; }
     Mod+Tab                             repeat=false { toggle-overview; }
     Mod+Shift+P                         { power-off-monitors; } // Turn off screens (useful for OLED or privacy)
     Mod+Shift+M                         { show-hotkey-overlay; }
@@ -110,29 +110,29 @@ binds {
 
 
     // ─── Screenshots ───
-    Print                               { screenshot-screen show-pointer=false; }
-    Shift+Print                         { screenshot show-pointer=false; }
-    Alt+Print                           { screenshot-window show-pointer=false; }
+    Print                               { spawn-sh "noctalia msg screenshot-fullscreen"; }
+    Shift+Print                         { spawn-sh "noctalia msg screenshot-region"; }
+    // Alt+Print                        { screenshot show-pointer=false; }
 
     // ─── GPU Screen Recorder (noctalia plugin) ───
-    Alt+F12                             hotkey-overlay-title="Record replay buffer"{ spawn-sh "qs -c noctalia-shell ipc call plugin:screen-recorder saveReplay"; }
+    Alt+F12                             hotkey-overlay-title="Record replay buffer"{ spawn-sh "noctalia msg plugin noctalia/screen_recorder:service all replay-save"; }
 
 
     // ─── Media Controls ───
-    XF86AudioRaiseVolume                allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call volume increase"; }
-    XF86AudioLowerVolume                allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call volume decrease"; }
-    XF86AudioMute                       allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call volume muteOutput"; }
-    XF86AudioMicMute                    allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call volume muteInput"; }
-    Mod+XF86AudioMute                   allow-when-locked=true hotkey-overlay-title=null{ spawn-sh "qs -c noctalia-shell ipc call volume muteInput"; }
-    XF86AudioNext                       allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call media next"; }
-    XF86AudioPrev                       allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call media previous"; }
-    XF86AudioPlay                       allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call media playPause"; }
-    XF86AudioPause                      allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call media playPause"; }
+    XF86AudioRaiseVolume                allow-when-locked=true { spawn-sh "noctalia msg volume-up"; }
+    XF86AudioLowerVolume                allow-when-locked=true { spawn-sh "noctalia msg volume-down"; }
+    XF86AudioMute                       allow-when-locked=true { spawn-sh "noctalia msg volume-mute"; }
+    XF86AudioMicMute                    allow-when-locked=true { spawn-sh "noctalia msg mic-mute"; }
+    XF86AudioNext                       allow-when-locked=true { spawn-sh "noctalia msg media next"; }
+    XF86AudioPrev                       allow-when-locked=true { spawn-sh "noctalia msg media previous"; }
+    XF86AudioPlay                       allow-when-locked=true { spawn-sh "noctalia msg media toggle"; }
+    XF86AudioPause                      allow-when-locked=true { spawn-sh "noctalia msg media pause"; }
+    Mod+XF86AudioMute                   allow-when-locked=true hotkey-overlay-title=null{ spawn-sh "noctalia msg mic-mute"; }
 
 
     // ─── Brightness Controls ───
-    XF86MonBrightnessUp                 allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call brightness increase"; }
-    XF86MonBrightnessDown               allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call brightness decrease"; }
+    XF86MonBrightnessUp                 allow-when-locked=true { spawn-sh "noctalia msg brightness-up"; }
+    XF86MonBrightnessDown               allow-when-locked=true { spawn-sh "noctalia msg brightness-down"; }
 
 
     // ─── Emergency Escape Key ───

@@ -1,5 +1,6 @@
 // ────────────── Startup Applications ──────────────
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Miscellaneous#spawn-sh-at-startup
 
-spawn-at-startup "noctalia"
+spawn-sh-at-startup "noctalia"
 spawn-sh-at-startup "nautilus --gapplication-service"
+spawn-sh-at-startup "sleep 5 && noctalia msg plugin noctalia/screen_recorder:service all replay-start focused"
