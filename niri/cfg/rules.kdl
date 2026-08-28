@@ -35,3 +35,10 @@ window-rule {
     match app-id="^steam_app_.*$"
     variable-refresh-rate true
 }
+
+// Picture in picture
+window-rule {
+    match app-id=r#"^org.mozilla.firefox$"# title="^Picture-in-Picture$"
+    open-floating true
+    default-floating-position x=16 y=48 relative-to="bottom-right"
+}

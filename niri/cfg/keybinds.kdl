@@ -115,7 +115,7 @@ binds {
     // Alt+Print                        { screenshot show-pointer=false; }
 
     // ─── GPU Screen Recorder (noctalia plugin) ───
-    Alt+F12                             hotkey-overlay-title="Record replay buffer"{ spawn-sh "noctalia msg plugin noctalia/screen_recorder:service all replay-save"; }
+    // Alt+F12                             hotkey-overlay-title="Record replay buffer"{ spawn-sh "noctalia msg plugin noctalia/screen_recorder:service all replay-save"; }
 
 
     // ─── Media Controls ───

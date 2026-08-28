@@ -6,11 +6,10 @@ environment {
     QT_QPA_PLATFORMTHEME "gtk3"
     QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
     XDG_CURRENT_DESKTOP "niri"
-    GTK_IM_MODULE "simple"
-//    GTK_IM_MODULE "ibus"
-//    XMODIFIERS "@im=ibus"
-//    QT_IM_MODULES "wayland;ibus"
-//    QT_IM_MODULE "ibus"
+    // GTK_IM_MODULE "simple"
+    GTK_IM_MODULE "ibus"
+    QT_IM_MODULE "ibus"
+    XMODIFIERS "@im=ibus"
 }
 
  cursor {
